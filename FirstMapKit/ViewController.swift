@@ -20,26 +20,37 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-        
-    }
-    
-    func setupLocationManager() {
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        checkLocationServices()
+
+ 
     }
     
     // check location services are enabled
     func checkLocationServices() {
         
         if CLLocationManager.locationServicesEnabled() {
-            setupLocationManager()
+            
+            mapView.showsUserLocation = true
+            centerViewOnUserLocation()
+            
             
         } else {
             // show allert letting the user know they have to turn it on
         }
     }
+    
+   
+    
+    func centerViewOnUserLocation() {
+        if let location = locationManager.location?.coordinate {
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 100, longitudinalMeters: 100)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+    
+    
+
     
    
 
@@ -58,7 +69,7 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        <#code#>
+        
     }
     
 //    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
