@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kxv-cC-bqS">
-                                <rect key="frame" x="141.5" y="831" width="131" height="32"/>
+                                <rect key="frame" x="131.5" y="831" width="151" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qbb-gr-r5I"/>

@@ -62,10 +62,10 @@
 				FAA196DD27499A500018A623 /* SceneDelegate.swift */,
 				FAA196DF27499A500018A623 /* ViewController.swift */,
 				FAA196E127499A500018A623 /* Main.storyboard */,
+				FA211C67274D9C3600A72C78 /* TestGit.swift */,
 				FAA196E427499A550018A623 /* Assets.xcassets */,
 				FAA196E627499A550018A623 /* LaunchScreen.storyboard */,
 				FAA196E927499A550018A623 /* Info.plist */,
-				FA211C67274D9C3600A72C78 /* TestGit.swift */,
 			);
 			path = FirstMapKit;
 			sourceTree = "<group>";
