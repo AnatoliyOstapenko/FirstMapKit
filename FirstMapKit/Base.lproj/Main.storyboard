@@ -25,6 +25,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qbb-gr-r5I"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,6 +44,9 @@
                     <navigationItem key="navigationItem" id="YCg-6R-ewc">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="location.circle" catalog="system" style="done" id="ko3-6u-FJ7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="centerBarButtonPressed:" destination="BYZ-38-t0r" id="TBt-74-dVg"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

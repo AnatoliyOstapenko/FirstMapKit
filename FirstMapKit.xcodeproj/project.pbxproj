@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA211C68274D9C3600A72C78 /* TestGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211C67274D9C3600A72C78 /* TestGit.swift */; };
 		FAA196DC27499A500018A623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA196DB27499A500018A623 /* AppDelegate.swift */; };
 		FAA196DE27499A500018A623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA196DD27499A500018A623 /* SceneDelegate.swift */; };
 		FAA196E027499A500018A623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA196DF27499A500018A623 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA211C67274D9C3600A72C78 /* TestGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGit.swift; sourceTree = "<group>"; };
 		FAA196D827499A500018A623 /* FirstMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA196DB27499A500018A623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA196DD27499A500018A623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				FAA196E427499A550018A623 /* Assets.xcassets */,
 				FAA196E627499A550018A623 /* LaunchScreen.storyboard */,
 				FAA196E927499A550018A623 /* Info.plist */,
+				FA211C67274D9C3600A72C78 /* TestGit.swift */,
 			);
 			path = FirstMapKit;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA211C68274D9C3600A72C78 /* TestGit.swift in Sources */,
 				FAA196E027499A500018A623 /* ViewController.swift in Sources */,
 				FAA196DC27499A500018A623 /* AppDelegate.swift in Sources */,
 				FAA196DE27499A500018A623 /* SceneDelegate.swift in Sources */,

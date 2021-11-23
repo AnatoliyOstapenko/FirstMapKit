@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         
         locationManager.delegate = self
         checkLocationServices()
+        
+        
 
  
     }
@@ -31,8 +33,10 @@ class ViewController: UIViewController {
         
         if CLLocationManager.locationServicesEnabled() {
             
+            locationManager.delegate = self
             mapView.showsUserLocation = true
             centerViewOnUserLocation()
+            locationManager.startUpdatingLocation()
             
             
         } else {
@@ -41,16 +45,28 @@ class ViewController: UIViewController {
     }
     
    
-    
+    // show current location of user
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 100, longitudinalMeters: 100)
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 10000, longitudinalMeters: 10000)
             mapView.setRegion(region, animated: true)
         }
     }
     
     
-
+    @IBAction func centerBarButtonPressed(_ sender: UIBarButtonItem) {
+        //
+        centerViewOnUserLocation()
+    }
+    
+    @IBAction func changeMapType(_ sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0 {
+            mapView.mapType = .standard
+        } else {
+            mapView.mapType = .satellite
+        }
+    }
     
    
 
@@ -62,6 +78,13 @@ extension ViewController: CLLocationManagerDelegate {
 
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        guard let location = locations.last else { return }
+        
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        
+        mapView.setRegion(region, animated: true)
 
         
 
