@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct TestGit {
+    func testForGit() -> String {
+        return "Let's make a new commit"
+    }
+}
