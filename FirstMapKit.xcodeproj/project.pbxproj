@@ -13,6 +13,7 @@
 		FAA196E327499A500018A623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA196E127499A500018A623 /* Main.storyboard */; };
 		FAA196E527499A550018A623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA196E427499A550018A623 /* Assets.xcassets */; };
 		FAA196E827499A550018A623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA196E627499A550018A623 /* LaunchScreen.storyboard */; };
+		FADFA917274EEFB0001A8AFF /* AbsolutelyUselessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFA916274EEFB0001A8AFF /* AbsolutelyUselessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FAA196E427499A550018A623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA196E727499A550018A623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA196E927499A550018A623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADFA916274EEFB0001A8AFF /* AbsolutelyUselessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutelyUselessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FAA196E427499A550018A623 /* Assets.xcassets */,
 				FAA196E627499A550018A623 /* LaunchScreen.storyboard */,
 				FAA196E927499A550018A623 /* Info.plist */,
+				FADFA916274EEFB0001A8AFF /* AbsolutelyUselessModel.swift */,
 			);
 			path = FirstMapKit;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADFA917274EEFB0001A8AFF /* AbsolutelyUselessModel.swift in Sources */,
 				FAA196E027499A500018A623 /* ViewController.swift in Sources */,
 				FAA196DC27499A500018A623 /* AppDelegate.swift in Sources */,
 				FAA196DE27499A500018A623 /* SceneDelegate.swift in Sources */,
